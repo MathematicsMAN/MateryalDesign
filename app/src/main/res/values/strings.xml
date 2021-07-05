@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">Materyal Desig</string>
+    <string name="app_name">Materyal Design</string>
     <string name="photo_of_the_day_stub">Photo of the day</string>
+    <string name="search_wiki">Поиск в Википедии</string>
+    <string name="wiki_helper_text">Ищет термин в Википедии</string>
+    <string name="favourite">Предпочтение</string>
+    <string name="settings">Настройки</string>
+    <string name="search">Найти</string>
 </resources>
