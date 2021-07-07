@@ -6,6 +6,7 @@
     <string name="favourite">Предпочтение</string>
     <string name="settings">Настройки</string>
     <string name="search">Найти</string>
+
     <string name="chip_default">Default</string>
     <string name="chip_entry">Entry</string>
     <string name="chip_choice">Choice</string>
@@ -40,9 +41,9 @@
     <string name="text_input_filled_box_text_field">Filled Box Text Field</string>
     <string name="text_input_text">Text</string>
     <string name="text_input_width_outlined_box_text_field">Outlined Box Text Field</string>
-    <string name="text_input_text">Text</string>
     <string name="tab_1">Tab 1</string>
     <string name="tab_2">Tab 2</string>
     <string name="tab_3">Tab 3</string>
     <string name="text_view_card">Card</string>
+
 </resources>
