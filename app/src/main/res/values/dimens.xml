@@ -14,4 +14,8 @@
     <dimen name="bottom_navigation_width">0dp</dimen>
     <dimen name="card_view_width">0dp</dimen>
     <dimen name="card_view_height">160dp</dimen>
+    <dimen name="margin_bottom_dots_indication">20dp</dimen>
+    <dimen name="margin_dot_around">7dp</dimen>
+    <dimen name="drawable_padding">10dp</dimen>
+    <dimen name="text_size_custom_tab">20sp</dimen>
 </resources>

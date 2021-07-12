@@ -170,6 +170,9 @@ class PictureOfTheDayFragment : Fragment() {
         }
     }
 
+    //Такой метод - onOptionsItemSelected - выделяется и его невозможно переопределить.
+//    onOptionsItemSelected
+
     companion object {
         private var isMain = true
     }
