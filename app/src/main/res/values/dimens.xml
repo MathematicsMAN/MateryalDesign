@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="start_padding">10dp</dimen>
+    <dimen name="text_margin">8dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="chip_group_spacing_horiz">25dp</dimen>
+    <dimen name="margin_top_24">24dp</dimen>
+    <dimen name="padding_bottom">16dp</dimen>
+    <dimen name="margin_start">16dp</dimen>
+    <dimen name="text_input_width">240dp</dimen>
+    <dimen name="tab_width">0dp</dimen>
+    <dimen name="marging_end">16dp</dimen>
+    <dimen name="bottom_navigation_width">0dp</dimen>
+    <dimen name="card_view_width">0dp</dimen>
+    <dimen name="card_view_height">160dp</dimen>
+    <dimen name="margin_bottom_dots_indication">20dp</dimen>
+    <dimen name="margin_dot_around">7dp</dimen>
+    <dimen name="drawable_padding">10dp</dimen>
+    <dimen name="text_size_custom_tab">20sp</dimen>
+</resources>
