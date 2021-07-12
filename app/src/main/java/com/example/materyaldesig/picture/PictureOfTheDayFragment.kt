@@ -13,13 +13,14 @@ import androidx.lifecycle.ViewModelProviders
 import coil.load
 import com.example.materyaldesig.MainActivity
 import com.example.materyaldesig.R
-import com.example.materyaldesig.databinding.MainFragmentBinding
+import com.example.materyaldesig.databinding.FragmentMainBinding
+import com.example.materyaldesig.databinding.FragmentMainStartBinding
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 class PictureOfTheDayFragment : Fragment() {
 
-    private var _binding: MainFragmentBinding? = null
+    private var _binding: FragmentMainStartBinding? = null
     private val binding get() = _binding!!
 //    private val bindingSh: BottomSheetLayoutBinding? = null
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
@@ -33,7 +34,7 @@ class PictureOfTheDayFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = MainFragmentBinding.inflate(inflater, container, false)
+        _binding = FragmentMainStartBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -169,6 +170,9 @@ class PictureOfTheDayFragment : Fragment() {
             }
         }
     }
+
+    //Такой метод - onOptionsItemSelected - выделяется и его невозможно переопределить.
+//    onOptionsItemSelected
 
     companion object {
         private var isMain = true
