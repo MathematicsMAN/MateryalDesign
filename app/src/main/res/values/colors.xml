@@ -8,4 +8,19 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_gray">#66000000</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="green">#7FFF7F</color>
+    <color name="light_gray">#aaaaaa</color>
+    <color name="indigo">#4b0082</color>
+    <color name="indigo_light">#6d5acf</color>
+    <color name="indigo_dark">#310062</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="pink_light">#ffb6c1</color>
+    <color name="pink_dark">#a35255</color>
+    <color name="gray">#808080</color>
+    <color name="background">#FFFF80</color>
+
 </resources>
