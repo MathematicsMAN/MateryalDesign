@@ -45,5 +45,6 @@
     <string name="tab_2">Tab 2</string>
     <string name="tab_3">Tab 3</string>
     <string name="text_view_card">Card</string>
+    <string name="some_big_text">Здесь должен быть большой текст. Добавим в него немного текста, где должна быть ссылка</string>
 
 </resources>

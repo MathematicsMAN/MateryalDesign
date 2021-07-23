@@ -1,8 +1,17 @@
 package com.example.materyaldesig.picture
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.Typeface
 import android.net.Uri
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.TextPaint
+import android.text.method.LinkMovementMethod
+import android.text.style.BulletSpan
+import android.text.style.ClickableSpan
 import android.view.*
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -62,6 +71,44 @@ class PictureOfTheDayFragment : Fragment() {
         setBottomSheetBehavior(view.findViewById(R.id.bottom_sheet_container))
 
         setBottomAppBar(view)
+
+        activity?.let {
+            binding.includeLayoutText.textView.typeface = Typeface.createFromAsset(it.assets, "DroidSerif-WmoY.ttf")
+        }
+
+        val subString = "ссылка"
+        val originalString = requireContext().getString(R.string.some_big_text)
+
+        val spannable = SpannableString(originalString)
+        spannable.setSpan(
+            BulletSpan(8, ContextCompat.getColor(requireContext(), R.color.colorAccent)),
+            18,
+            25,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+
+        val clickableSpan: ClickableSpan = object : ClickableSpan() {
+            override fun onClick(widget: View) {
+                Toast.makeText(requireContext(), "You Click me!", Toast.LENGTH_SHORT).show()
+            }
+
+            override fun updateDrawState(ds: TextPaint) {
+                super.updateDrawState(ds)
+                ds.isUnderlineText = true
+            }
+        }
+        spannable.setSpan(
+            clickableSpan,
+            Regex(subString).matchEntire(originalString)?.range?.start!!,
+            Regex(subString).matchEntire(originalString)?.range?.endInclusive!!,
+            Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+
+        with(binding.includeLayoutText.textView){
+            text = spannable
+            movementMethod = LinkMovementMethod.getInstance()
+            highlightColor = Color.TRANSPARENT
+        }
     }
 
     private fun renderData(data: PictureOfTheDayData) {
@@ -87,6 +134,9 @@ class PictureOfTheDayFragment : Fragment() {
                         lifecycle(this@PictureOfTheDayFragment)
                         error(R.drawable.ic_load_error_vector)
                     }
+                }
+                serverResponseData.explanation?.let {
+                    binding.includeLayoutText.textView.text = it
                 }
             }
             is PictureOfTheDayData.Loading -> {
