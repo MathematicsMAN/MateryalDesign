@@ -62,4 +62,11 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorAccent40Alfa">#66D81B60</color>
+
+    <style name="AppTheme.Splash">
+        <item name="android:windowBackground">
+            @drawable/splash_background_drawable
+        </item>
+    </style>
+
 </resources>

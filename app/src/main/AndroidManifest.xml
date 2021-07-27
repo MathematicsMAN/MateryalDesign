@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MateryalDesig">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity">
+<!--            android:theme="@style/AppTheme.Splash">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,9 +20,18 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".MainActivity" />
         <activity android:name=".animations.AnimationsActivity" />
         <activity android:name=".api.ApiActivity" />
         <activity android:name=".apibottom.ApiBottomActivity" />
+        <activity android:name=".recycler.RecyclerActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            />
+<!--            android:resource="@array/preloaded_fonts"-->
+<!--        Строка выше - должна быть в meta-data. Я её убрал, т.к.
+             не понятно, что за ресурс @array/preloaded_fonts -->
 
     </application>
 
